@@ -1,0 +1,7 @@
+repos:
+- repo: https://github.com/semgrep/semgrep
+  rev: 'v1.70.0'
+  hooks:
+    - id: semgrep
+      # See https://semgrep.dev/explore to select a ruleset and copy its URL
+      args: ['--config', 'p/default', '--error', '--skip-unknown-extensions']
